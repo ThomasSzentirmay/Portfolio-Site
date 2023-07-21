@@ -350,3 +350,34 @@ section {
   margin-left: 25px;
   margin-top: 15px;
 }
+
+/* Styles for Programming Languages section */
+.skills-item .languages {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.skills-item .languages li {
+  font-size: 1.2rem;
+  background: var(--main-color);
+  color: var(--bg-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-item .languages li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.languages {
+  margin-left: 20px;
+}

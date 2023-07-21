@@ -22,7 +22,8 @@ sr.reveal('.about h2', { delay: 250, origin: 'left' });
 sr.reveal('.services h2', { delay: 250, origin: 'top' });
 sr.reveal('.portfolio h2', { delay: 250, origin: 'right' });
 sr.reveal('.contact h2', { delay: 250, origin: 'top' });
-
+sr.reveal('.skills-item .languages', { delay: 250, origin: 'right' })
+sr.reveal('.skills-item .languages li', { delay: 250, origin: 'left' })
 
 // Smooth scroll function
 function smoothScroll(target, duration) {
