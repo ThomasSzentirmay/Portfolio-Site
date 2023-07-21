@@ -200,7 +200,7 @@ section {
 
 
 /* Additional styles for content sections */
-.about, .services, .portfolio, .contact {
+.about, .skills, .portfolio, .contact {
   height: 625.5px;
   display: flex;
   align-items: center;
@@ -219,7 +219,7 @@ section {
 }
 
 .about h2,
-.services h2,
+.skills h2,
 .portfolio h2,
 .contact h2 {
   font-size: 2.5rem;
@@ -228,7 +228,7 @@ section {
 }
 
 .about p,
-.services p,
+.skills p,
 .portfolio p,
 .contact p {
   font-size: 1.1rem;
@@ -237,11 +237,11 @@ section {
   margin-bottom: 20px;
 }
 
-.services {
+.skills {
   background-color: #1b1f24;
 }
 
-.service-item {
+.skills-item {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -249,12 +249,12 @@ section {
   transition: transform 0.3s ease;
 }
 
-.service-item i {
+.skills-item i {
   font-size: 30px;
   margin-right: 20px;
 }
 
-.service-item:hover {
+.skills-item:hover {
   transform: translateY(-5px);
 }
 
@@ -327,7 +327,7 @@ section {
   order: 1;
 }
 
-.services.order-2,
+.skills.order-2,
 .contact.order-2 {
   order: 2;
 }
@@ -343,4 +343,10 @@ section {
 /* Customising main content widths for each sections */
 .contact-content {
   width: 800px;
+}
+
+.skills-content p{
+  margin: 0 auto; 
+  margin-left: 25px;
+  margin-top: 15px;
 }
