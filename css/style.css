@@ -87,6 +87,9 @@ section {
   background-size: cover;
 }
 .main-content {
+  padding-top: 125px;
+}
+.main-content-one {
   padding-top: 300px;
 }
 .main-content h4 {
