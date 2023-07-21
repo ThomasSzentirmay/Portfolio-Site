@@ -6,6 +6,7 @@
   list-style: none;
   font-family: "Inter", sans-serif;
 }
+
 :root {
   --text-color: #ffffff;
   --main-color: #13bbff;
@@ -15,10 +16,12 @@
   --h4-font: 1.6rem;
   --p-font: 1.1rem;
 }
+
 body {
   color: var(--text-color);
   background: var(--bg-color);
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -32,17 +35,21 @@ header {
   background: transparent;
   transition: all 0.55s ease;
 }
+
 .logo {
   font-size: 36px;
   color: var(--text-color);
   font-weight: 600;
 }
+
 span {
   color: var(--main-color);
 }
+
 .navlist {
   display: flex;
 }
+
 .navlist a {
   font-size: var(--p-font);
   font-weight: 500;
@@ -50,13 +57,16 @@ span {
   margin-left: 40px;
   transition: all 0.5s ease;
 }
+
 .navlist a:hover {
   color: var(--main-color);
   text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
+
 .navlist a.active {
   color: var(--main-color);
 }
+
 .h-btn {
   display: inline-block;
   padding: 11px 26px;
@@ -69,6 +79,7 @@ span {
   transition: all 0.55s ease;
   margin-left: 25px;
 }
+
 .h-btn:hover {
   background: var(--main-color);
   color: var(--bg-color);
@@ -79,6 +90,7 @@ span {
 section {
   padding: 0 16%;
 }
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -86,21 +98,27 @@ section {
   background-position: top right;
   background-size: cover;
 }
+
 .main-content {
   padding-top: 125px;
 }
+
 .main-content-one {
   padding-top: 300px;
 }
+
 .main-content h4 {
-  font-size: var(--h4-font);
+  font-size:
+  var(--h4-font);
 }
+
 .main-content h1 {
   font-size: var(--big-font);
   font-weight: 900;
   margin: 20px 0px 20px;
   line-height: 1.2;
 }
+
 .main-content p {
   font-size: 16px;
   font-weight: 400;
@@ -110,9 +128,11 @@ section {
   line-height: 30px;
   margin-bottom: 15px;
 }
+
 .social {
   margin-bottom: 40px;
 }
+
 .social a {
   display: inline-flex;
   align-items: center;
@@ -128,10 +148,12 @@ section {
   cursor: pointer;
   transition: all 0.55s ease;
 }
+
 .social a:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px var(--main-color);
 }
+
 .btn {
   display: inline-block;
   padding: 11px 26px;
@@ -143,11 +165,13 @@ section {
   font-weight: 600;
   transition: all 0.5s ease;
 }
+
 .btn:hover {
   background: transparent;
   color: var(--main-color);
   box-shadow: 0 0 20px var(--main-color);
 }
+
 .btn2 {
   background: transparent;
   color: var(--main-color);
@@ -155,13 +179,16 @@ section {
   margin-left: 15px;
   transition: all 0.55s ease;
 }
+
 .btn2:hover {
   background: var(--main-color);
   color: var(--bg-color);
 }
+
 .bottom {
   margin-top: 215px;
 }
+
 .bottom p {
   font-size: 15px;
   font-weight: 400;
@@ -170,11 +197,8 @@ section {
 }
 
 
-/* Your existing CSS styles remain unchanged */
 
-/* ... */
-
-/* Additional styles for new sections */
+/* Additional styles for content sections */
 .about, .services, .portfolio, .contact {
   height: 625.5px;
   display: flex;
