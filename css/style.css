@@ -173,10 +173,9 @@ section {
 
 /* Additional styles for new sections */
 .about, .services, .portfolio, .contact {
-  height: 625.5px; /* Set a consistent height */
+  height: 625.5px;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 0 16%;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -224,7 +223,7 @@ section {
 
 .portfolio,
 .contact {
-  background-color: #13bbff;
+  background-color: #1b1f24;
 }
 
 /* Styling for Portfolio Cards */
@@ -298,4 +297,23 @@ section {
 
 .contact-form button:hover {
   background-color: #0c8bff;
+}
+
+/* Additional CSS for alternating sections */
+.about.order-1,
+.portfolio.order-1 {
+  order: 1;
+}
+
+.services.order-2,
+.contact.order-2 {
+  order: 2;
+}
+
+/* Vertically center the content in each .main-content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
