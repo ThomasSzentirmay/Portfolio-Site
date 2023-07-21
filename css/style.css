@@ -85,6 +85,7 @@ span {
   color: var(--bg-color);
   box-shadow: 0 0 20px var(--main-color);
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 section {
@@ -203,9 +204,18 @@ section {
   height: 625.5px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 16%;
   color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+.portfolio {
+  margin-top: 250px;
+}
+
+.contact {
+  margin: 300px;
 }
 
 .about h2,
@@ -294,7 +304,7 @@ section {
 
 /* Styling for Contact Form */
 .contact-form {
-  max-width: 400px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -311,21 +321,6 @@ section {
   resize: vertical;
 }
 
-.contact-form button {
-  padding: 10px 20px;
-  background-color: var(--main-color);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #0c8bff;
-}
-
 /* Additional CSS for alternating sections */
 .about.order-1,
 .portfolio.order-1 {
@@ -337,10 +332,15 @@ section {
   order: 2;
 }
 
-/* Vertically center the content in each .main-content */
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+/* Customising main content widths for each sections */
+.contact-content {
+  width: 800px;
 }
