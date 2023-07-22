@@ -1,190 +1,138 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thomas Szentirmay</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Thomas Szentirmay</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!---remixicons link--->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-	<!---remixicons link--->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <!---Google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<!---Google fonts link--->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
-</head>
+  <body>
+    <!---header-->
+    <header>
+      <a href="#hero" class="logo">Portfolio <span>X.</span></a>
 
-<body>
+      <ul class="navlist">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio-navscroll">Portfolio</a></li>
+      </ul>
 
-	<!---header-->
-	<header>
-		<a href="#hero" class="logo">Portfolio <span>X.</span></a>
+      <div class="top-btnn">
+        <a href="#contact" class="h-btn">Contact me</a>
+      </div>
+    </header>
 
-		<ul class="navlist">
-			<li><a href="#hero" class="active">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#portfolio-navscroll">Portfolio</a></li>
-		</ul>
+    <!---hero-->
+    <section class="hero">
+      <div class="main-content main-content-one">
+        <h4>Hi, There!</h4>
+        <h1>I'm <span class="input"></span></h1>
+        <p>
+          As a passionate web developer, I strive to create stunning and
+          user-centric websites, using my knowledge in front-end and back-end
+          technologies to craft seamless online experiences for users.
+        </p>
+        <div class="social">
+          <a href="#"><i class="ri-github-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+          <!-- <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a> -->
+        </div>
 
-		<div class="top-btnn">
-			<a href="#contact" class="h-btn">Contact me</a>
-		</div>
-	</header>
+        <div class="main-btnn">
+          <a href="#" class="btn">Download CV</a>
+        </div>
+      </div>
+    </section>
 
-	<!---hero-->
-	<section class="hero">
-		<div class="main-content main-content-one">
-			<h4>Hi, There!</h4>
-			<h1>I'm <span class="input"></span></h1>
-			<p>As a passionate web developer, I strive to create stunning and user-centric websites, using my knowledge in front-end and back-end technologies to craft seamless online experiences for users.</p>
-			<div class="social">
-				<a href="#"><i class="ri-facebook-fill"></i></a>
-				<a href="#"><i class="ri-instagram-fill"></i></a>
-				<a href="#"><i class="ri-twitter-fill"></i></a>
-				<a href="#"><i class="ri-youtube-fill"></i></a>
-			</div>
-
-			<div class="main-btnn">
-				<a href="#" class="btn">Hire me</a>
-				<a href="#" class="btn btn2">Download CV</a>
-			</div>
-		</div>
-	</section>
-
-	<!---about-->
-	<section class="about" id="about">
-		<div class="main-content">
-			<h2>About Me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit tincidunt erat, eu hendrerit metus
-				rhoncus eget. Sed eu scelerisque nunc.</p>
-			<p>Nulla facilisi. Proin id magna ut libero scelerisque blandit ut ac mi. Nulla facilisi. Nullam vel nisi ac
-				ex posuere sagittis.</p>
-		</div>
-	</section>
-
-	<!---services-->
-	<section class="skills" id="skills">
-		<div class="main-content skills-content">
-			<h2>Skills</h2>
-			<div class="skills-item">
-				<i class="ri-paint-brush-line"></i>
-				<h3>Web Design</h3>
-				<p>Styling webpages is a very fun and incredibly rewarding process. Using frameworks like Tailwind, Bootstrap, and of course custom styles, I am able to create pages like this!</p>
-			</div>
-			<div class="skills-item">
-				<i class="ri-code-line"></i>
-				<h3>Web Development</h3>
-				<p>I pride myself in following clean and concise coding practices, and learn more everyday when it comes to increasing my potential as a developer.</p>
-			</div>
-			<div class="skills-item">
-				<i class="ri-device-line"></i>
-				<h3>Responsive Design</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit tincidunt erat, eu hendrerit
-					metus rhoncus eget.</p>
-			</div>
-			<div class="skills-item" data-sr="enter right, move 50px, over 0.5s">
-				<i class="ri-code-box-line"></i>
-				<h3>Programming Languages</h3>
-				<ul class="languages">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Node.js</li>
-					<li>Express.js</li>
-					<li>React.js</li>
-					<li>MySQL</li>
-					<li>NoSQL</li>
-					<li>MongoDB</li>
-				</ul>
-			</div>
-			<div class="skills-item" data-sr="enter right, move 50px, over 0.5s">
-				<i class="ri-code-box-line"></i>
-				<h3>Frameworks and <br>Others</h3>
-				<ul class="languages">
-					<li>Bootstrap</li>
-					<li>Tailwind</li>
-					<li>jQuery</li>
-					<li>Handlebars</li>
-					<li>Git</li>
-				</ul>
+    <section class="projects" id="projects">
+		<h2 class="section-title">My Projects</h2>
+		<div class="project-container">
+		  <!-- Project 1 -->
+		  <div class="project text-right">
+			<div class="project-content">
+			  <img src="./img/chatgptclone-image.png" alt="Project 1" />
+			  <div class="project-description">
+				<h3>ChatGPT Clone</h3>
+				<p>Built using the OpenAI API, this ChatGPT clone acts as a fully functioning application, closely resembling the most talked about product in the tech world today.</p>
+				<br>
+				<p><strong>Node.js | Express.js | Javascript</strong></p>
+				<br>
+				<a href="https://github.com/ThomasSzentirmay/ChatGPT-Clone" class="project-link" target="_blank">View Project Here</a>
+			  </div>
 			</div>
 		</div>
-	</section>
-
-	<!---portfolio-->
-	<section class="portfolio" id="portfolio">
-		<div class="main-content" id="portfolio-navscroll">
-			<h2>Recent Projects</h2>
-			<div class="portfolio-cards">
-				<!-- Dummy Project Cards (Replace with your actual projects) -->
-				<div class="portfolio-card">
-					<img src="https://via.placeholder.com/300" alt="Project 1">
-					<h3>Project 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="portfolio-card">
-					<img src="https://via.placeholder.com/300" alt="Project 2">
-					<h3>Project 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="portfolio-card">
-					<img src="https://via.placeholder.com/300" alt="Project 3">
-					<h3>Project 3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="portfolio-card">
-					<img src="https://via.placeholder.com/300" alt="Project 4">
-					<h3>Project 4</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<!-- Add more project cards as needed -->
+	  
+		  <!-- Project 2 -->
+		<div class="project">
+			<div class="project-content reverse">
+			  <img src="./img/mixmate-image.png" alt="Project 2" />
+			  <div class="project-description">
+				<h3>MixMate</h3>
+				<p>A cocktail connoisseur sharing platform, that streamlines the cocktail creating process, and allows users to share their creations with the world.</p>
+				<br>
+				<p><strong>Handlebars | MySQL | Node.js | Express.js</strong></p>
+				<br>
+				<a href="https://mixmatecocktails-1b7d39db7409.herokuapp.com/" class="project-link" target="_blank">View Project Here</a>
+			  </div>
 			</div>
 		</div>
-	</section>
 
-	<!---contact-->
-	<section class="contact" id="contact">
-		<div class="main-content contact-content">
-			<h2>Contact Me</h2>
-			<p>Reach out with any questions or opportunities. I would love to connect and hear from you!</p>
-			<div class="contact-form">
-				<!-- Add your contact form here -->
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required placeholder="John Smith">
+        <!-- Project 3 -->
+        <div class="project text-right">
+          <div class="project-content">
+            <img src="path_to_project_image_3.jpg" alt="Project 3" />
+            <div class="project-description">
+              <h3>Project 3</h3>
+              <p>Description of Project 3 goes here.</p>
+			  <br>
+			  <a href="#" class="project-link" target="_blank">View Project Here</a>
+            </div>
+          </div>
+        </div>
 
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required placeholder="johnsmith@gmail.com">
+        <!-- Project 4 -->
+        <div class="project">
+          <div class="project-content reverse">
+            <img src="path_to_project_image_4.jpg" alt="Project 4" />
+            <div class="project-description">
+              <h3>Project 4</h3>
+              <p>Description of Project 4 goes here.</p>
+			  <br>
+			  <a href="#" class="project-link" target="_blank">View Project Here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" rows="4" required placeholder="Hello..."></textarea>
+    <!---js link-->
+    <script src="js/script.js"></script>
 
-				<button type="submit" class="h-btn">Send Message</button>
-			</div>
-		</div>
-	</section>
-
-	<div class="bottom">
-		<p>Copyright © 2023 – Made by Thomas Szentirmay</p>
-	</div>
-
-	<script src="https://unpkg.com/scrollreveal"></script>
-
-	<!---js link-->
-	<script src="js/script.js"></script>
-
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-	<script>
-		var typed = new Typed(".input", {
-			strings: ["Tom Szentirmay", "A Front-end Dev", "A Back-end Dev"],
-			typeSpeed: 70,
-			backSpeed: 65,
-			loop: true
-		})
-	</script>
-</body>
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".input", {
+        strings: ["Tom Szentirmay", "A Front-end Dev", "A Back-end Dev"],
+        typeSpeed: 70,
+        backSpeed: 65,
+        loop: true,
+      });
+    </script>
+  </body>
 </html>
