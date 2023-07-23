@@ -409,4 +409,37 @@ section {
   visibility: visible;
 }
 
-/* BG Animation */
+/* RESPONSIVE CODE */
+@media screen and (max-width: 900px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .project-description {
+    margin: 0;
+  }
+
+  .project img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-content.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .margin-top-image {
+    margin-top: 15px;
+  }
+}
