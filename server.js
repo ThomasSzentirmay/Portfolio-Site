@@ -1,16 +1,27 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000; // Use the environment port or 3000 as the default
+const port = process.env.PORT || 3333; 
 
-// Set static folder for serving static files (e.g., CSS, images)
+
+// MIDDLEWARE
 app.use(express.static("public"));
 
-// Handle the home page route
+
+// LOAD ROUTES
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-// Start the server
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/public/about.html");
+});
+
+app.get("/contact", (req, res) => {
+  res.sendFile(__dirname + "/public/contact.html");
+});
+
+
+// START SERVER
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
