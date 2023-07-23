@@ -10,19 +10,27 @@ window.addEventListener("scroll", function () {
 
 // Smooth scroll to sections functionality
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".navlist a");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const targetSection = document.querySelector(link.getAttribute("href"));
-      if (targetSection) {
-        const targetOffset = targetSection.getBoundingClientRect().top;
-        const headerOffset = document.querySelector("header").offsetHeight;
-        const scrollOffset = targetOffset + window.scrollY - headerOffset;
-        window.scrollTo({
-          top: scrollOffset,
+  const scrollLinks = document.querySelectorAll(".nav-link, .h-btn");
+
+  scrollLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const href = link.getAttribute("href");
+      if (href.startsWith("#")) {
+        // Handle smooth scrolling for internal anchor links
+        const targetElement = document.querySelector(href);
+        const headerHeight = document.querySelector("header").offsetHeight;
+        const position = targetElement.getBoundingClientRect().top;
+        const offsetPosition = position - headerHeight;
+
+        window.scrollBy({
+          top: offsetPosition,
           behavior: "smooth",
         });
+      } else {
+        // Handle external links (e.g., "/contact" and "/about")
+        window.location.href = href;
       }
     });
   });
