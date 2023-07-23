@@ -337,30 +337,55 @@ section {
 }
 
 /* FOOTER SECTION STYLES */
+/* FOOTER SECTION STYLES */
 .footer {
   background-color: #202429;
   color: var(--text-color);
-  padding: 20px;
-  text-align: center;
-  height: 125px;
+  height: 200px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 16%;
 }
 
 .footer-content {
   margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .footer p {
   font-size: 14px;
-  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
-/* Back to Top Button */
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.footer-buttons a {
+  margin: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 4px 8px;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-buttons a:hover {
+  background-color: var(--bg-color);
+}
+
+/* BACK TO TOP BTN */
 .back-to-top-btn {
   position: fixed;
   bottom: 20px;
@@ -382,4 +407,4 @@ section {
 .back-to-top-btn.show {
   opacity: 1;
   visibility: visible;
-}
+} 
