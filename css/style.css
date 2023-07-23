@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -114,8 +116,7 @@ section {
 }
 
 .main-content h4 {
-  font-size:
-  var(--h4-font);
+  font-size: var(--h4-font);
 }
 
 .main-content h1 {
@@ -230,7 +231,7 @@ section {
 .project-description {
   flex: 1;
   margin-left: 20px;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .project h3 {
@@ -255,11 +256,11 @@ section {
 }
 
 .project-link {
- text-decoration: none;
- color: #ccc;
- opacity: 0.6;
- cursor: pointer;
- transition: 0.3s ease;
+  text-decoration: none;
+  color: #ccc;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .project-link:hover {
@@ -288,17 +289,16 @@ section {
 
 .skill-item {
   position: relative;
-  width: 150px; 
-  height: 150px; 
+  width: 150px;
+  height: 150px;
   background-color: var(--main-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 10px 20px; 
+  margin: 0 10px 20px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
   transition: all 0.5s ease;
 }
 
@@ -407,4 +407,6 @@ section {
 .back-to-top-btn.show {
   opacity: 1;
   visibility: visible;
-} 
+}
+
+/* BG Animation */

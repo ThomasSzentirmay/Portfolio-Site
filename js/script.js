@@ -71,3 +71,18 @@ window.addEventListener("load", () => {
   footerContent.style.opacity = "1";
   footerContent.style.transform = "translateY(0)";
 });
+
+// Active nav links
+const navLinks = document.querySelectorAll('.nav-link');
+
+function removeActiveClass() {
+  navLinks.forEach((link) => link.classList.remove('active'));
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    removeActiveClass();
+    link.classList.add('active');
+  });
+});
