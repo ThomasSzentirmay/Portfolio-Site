@@ -195,6 +195,7 @@ section {
 .section-title {
   margin-bottom: 50px;
   text-align: center;
+  color: var(--main-color);
 }
 
 .project {
@@ -264,4 +265,73 @@ section {
 .project-link:hover {
   cursor: pointer;
   opacity: 1;
+}
+
+/* SKILL SECTION STYLES */
+.skills {
+  padding: 100px 16%;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: var(--h4-font);
+  font-weight: 600;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  position: relative;
+  width: 150px; 
+  height: 150px; 
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 20px; 
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.skill-icon {
+  font-size: 60px;
+  color: var(--bg-color);
+  transform: scale(0.7);
+  transition: all 0.5s ease;
+}
+
+.icon-high {
+  margin-top: 10px;
+}
+
+.skill-item h3 {
+  font-size: var(--p-font);
+  font-weight: 600;
+  color: var(--bg-color);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: #fff;
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1);
+}
+
+.skill-item:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.margin-text {
+  margin-left: 5px;
 }
