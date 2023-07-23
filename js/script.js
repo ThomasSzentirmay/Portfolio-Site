@@ -86,3 +86,12 @@ navLinks.forEach((link) => {
     link.classList.add('active');
   });
 });
+
+// View more projects btn functionality
+const viewMoreBtn = document.getElementById("view-more-btn");
+const project4 = document.getElementById("project-4");
+
+viewMoreBtn.addEventListener("click", () => {
+  project4.style.display = "block";
+  viewMoreBtn.style.display = "none";
+});
