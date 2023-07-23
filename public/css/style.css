@@ -274,6 +274,12 @@ section {
   color: #13bbff;
 }
 
+.project.animate {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 /* VIEW MORE PROJECTS BTN */
 .view-more-btn-container {
   display: flex;

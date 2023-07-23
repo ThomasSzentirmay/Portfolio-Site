@@ -102,8 +102,23 @@ const project4 = document.getElementById("project-4");
 
 viewMoreBtn.addEventListener("click", () => {
   if (project3.style.display === "none") {
-    project3.style.display = "block";
-    project4.style.display = "block";
-    viewMoreBtn.style.display = "none";
+    // Add the "animate" class to projects
+    project3.classList.add("animate");
+    project4.classList.add("animate");
+
+    setTimeout(() => {
+      project3.style.display = "block";
+      project4.style.display = "block";
+
+      // Trigger the animation by setting opacity and transform
+      requestAnimationFrame(() => {
+        project3.style.opacity = "1";
+        project3.style.transform = "translateY(0)";
+        project4.style.opacity = "1";
+        project4.style.transform = "translateY(0)";
+      });
+
+      viewMoreBtn.style.display = "none";
+    }, 100); // Delay the display change to match the animation duration
   }
 });
