@@ -445,41 +445,6 @@ section {
   visibility: visible;
 }
 
-/* RESPONSIVE CODE */
-@media screen and (max-width: 900px) {
-  .project-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .project {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .project-description {
-    margin: 0;
-  }
-
-  .project img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  .project-content {
-    flex-direction: column;
-  }
-
-  .project-content.reverse {
-    flex-direction: column-reverse;
-  }
-
-  .margin-top-image {
-    margin-top: 15px;
-  }
-}
-
 
 /* ADDITIONAL ABOUT PAGE STYLES */
 .about {
@@ -516,6 +481,7 @@ section {
   flex: 1; 
   text-align: left;
   padding: 0 125px;
+  width: 90vw;
 }
 
 .social-aboutpage {
@@ -554,5 +520,60 @@ section {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+
+/* RESPONSIVE CODE */
+@media screen and (max-width: 900px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .project-description {
+    margin: 0;
+  }
+
+  .project img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .project-content {
+    flex-direction: column;
+  }
+
+  .project-content.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .margin-top-image {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 1400px;
+    width: auto;
+  }
+
+  .about-details {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
   }
 }
