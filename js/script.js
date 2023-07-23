@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 // Smooth scroll to sections functionality
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".navlist a");
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
       const targetSection = document.querySelector(link.getAttribute("href"));
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const scrollOffset = targetOffset + window.scrollY - headerOffset;
         window.scrollTo({
           top: scrollOffset,
-          behavior: "smooth"
+          behavior: "smooth",
         });
       }
     });
@@ -45,9 +45,10 @@ function smoothScrollToTop() {
   function scrollAnimation(timestamp) {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = timestamp - startTimestamp;
-    const scrollStep = Math.max(progress / duration, 0) * distance + startPosition;
+    const scrollStep =
+      Math.max(progress / duration, 0) * distance + startPosition;
     window.scrollTo(0, scrollStep);
-    
+
     if (progress < duration) {
       requestAnimationFrame(scrollAnimation);
     }
