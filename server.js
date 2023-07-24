@@ -26,10 +26,10 @@ app.get("/contact", (req, res) => {
 
 // CONTACT ME FORM ROUTE
 const transporter = nodemailer.createTransport({
-  service: "gmail", // Specify the email service provider
+  service: "gmail", 
   auth: {
-    user: process.env.GMAIL_USER, // Replace with your Gmail username/email
-    pass: process.env.GMAIL_PASS, // Replace with your Gmail password
+    user: process.env.GMAIL_USER, 
+    pass: process.env.GMAIL_PASS,
   },
 });
 
