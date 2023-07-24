@@ -525,13 +525,17 @@ section {
 
 /* CONTACT PAGE STYLES */
 .contact {
-  height: 90vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 50px;
   text-align: center;
+}
+
+.contact-content {
+  margin-top: 75px;
 }
 
 .form-group {
